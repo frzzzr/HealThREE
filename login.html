@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login to HealThREE</title>
+    <meta name="author" content="NAT"/>
+    <meta name="keywords" content="forms, links, html, account"/>
+    <style>
+        /* CSS Styles for nature theme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cde6d0; /* light green */
+        }
+        .sctn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background-color: #ffffff; /* white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
+        .form-value {
+            text-align: center;
+        }
+        .inputbox {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%; /* Ensure the input boxes take up full width of container */
+        }
+
+        .inputbox ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .inputbox input {
+            padding: 10px;
+            padding-left: 30px;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            width: calc(100% - 40px); /* Adjusted width to accommodate icon and padding */
+        }
+
+        .inputbox label {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            color: #aaa;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .inputbox input:focus + label,
+        .inputbox input:valid + label {
+            top: -10px;
+            font-size: 12px;
+            color: #65a35f; /* dark green */
+        }
+        .forget {
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .forget a {
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+        .register a {
+            color: #65a35f; /* dark green */
+            text-decoration: none;
+        }
+        button.pndt {
+            background-color: #65a35f; /* dark green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button.pndt:hover {
+            background-color: #92c47d; /* medium green */
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #65a35f; /* dark green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Remove underline */
+            margin: 20px; /* Adjust margin */
+            position: absolute; /* Position absolutely */
+            top: 20px; /* Distance from top */
+            left: 20px; /* Distance from left */
+            z-index: 1; /* Ensure it's above other elements */
+        }
+
+        .back-btn:hover {
+            background-color: #92c47d; /* medium green */
+        }
+    </style>
+</head>
+<body>
+    <a class="back-btn" href="index.html">Back</a>
+<section class="sctn">
+    <div class="form-box">
+        <div class="form-value">
+            <form action="">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember me <a href="#"><u>Forgot Password</a></u></label>
+                </div>
+                <button type="submit" class="pndt" onclick="window.location.href = 'index.html';">Log In</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+unpkg.com
